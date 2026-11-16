@@ -14,20 +14,26 @@ header, footer {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   border-bottom: .15rem solid rgba(255, 255, 255, .25);
 }
 
-footer {
-  border-top: .15rem solid rgba(255, 255, 255, .25);
-}
+.main-logo-link {
+  & img {
+    width: 5rem;
+    border-radius: 50%;
+    transition: all .15s;
 
-body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: max-content 1fr max-content;
+    &:hover {
+      box-shadow: 0rem 0rem .25rem .15rem white;
+    }
+  }
 }
 
 .main-nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 1.15rem;
@@ -39,7 +45,7 @@ body {
 }
 
 .page-link {
-  transition: all .25s;
+  transition: all .15s;
 
   &:hover {
     opacity: .7;
@@ -48,4 +54,14 @@ body {
 
 .page-link--current {
   opacity: .7;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+footer {
+  border-top: .15rem solid rgba(255, 255, 255, .25);
 }
