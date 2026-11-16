@@ -20,7 +20,7 @@ header {
   border-bottom: .15rem solid rgba(255, 255, 255, .25);
 }
 
-.main-logo-link {
+.header__main-logo-link {
   & img {
     width: 5rem;
     border-radius: 50%;
@@ -32,7 +32,7 @@ header {
   }
 }
 
-.main-nav {
+.header__main-nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -64,4 +64,21 @@ body {
 
 footer {
   border-top: .15rem solid rgba(255, 255, 255, .25);
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__info, .footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__chapter, .contacts__contact {
+  font-size: .9rem;
+  opacity: .75;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .9;
+  }
 }
