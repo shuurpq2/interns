@@ -4,10 +4,3 @@
   --dark-text-color: #EFF6E0;
   --light-text-color: #01161E;
 }
-
-* {
-  background-color: var(--dark-bg-color);
-  color: var(--dark-text-color);
-  font-family: sans-serif;
-  font-weight: bold;
-}

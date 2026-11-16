@@ -1,5 +1,16 @@
+* {
+  color: var(--dark-text-color);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+html {
+  background-color: var(--dark-bg-color);
+}
+
 header, footer {
   background-color: rgba(255, 255, 255, .15);
+  padding: .5rem;
 }
 
 header {
@@ -19,6 +30,12 @@ body {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  font-size: 1.15rem;
+}
+
+.main-nav__pages, .main-nav__auth {
+  display: flex;
+  gap: .75rem;
 }
 
 .page-link {
