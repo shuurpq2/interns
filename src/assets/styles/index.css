@@ -1,0 +1,17 @@
+header, footer {
+  background-color: rgba(255, 255, 255, .15);
+}
+
+header {
+  border-bottom: .1rem solid rgba(255, 255, 255, .25);
+}
+
+footer {
+  border-top: .1rem solid rgba(255, 255, 255, .25);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
