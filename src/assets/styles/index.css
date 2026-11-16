@@ -3,15 +3,32 @@ header, footer {
 }
 
 header {
-  border-bottom: .1rem solid rgba(255, 255, 255, .25);
+  border-bottom: .15rem solid rgba(255, 255, 255, .25);
 }
 
 footer {
-  border-top: .1rem solid rgba(255, 255, 255, .25);
+  border-top: .15rem solid rgba(255, 255, 255, .25);
 }
 
 body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-link {
+  transition: all .25s;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.page-link--current {
+  opacity: .7;
 }
