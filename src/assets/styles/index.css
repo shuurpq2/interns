@@ -76,6 +76,69 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
+  grid-template-columns: 100vw;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, .25);
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 1rem;
+  gap:1rem;
+}
+
+.slider__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__track {
+  scroll-behavior: smooth;
+  display: flex;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  width: 30rem;
+  box-shadow: 0 0 .25rem .05rem rgba(0, 0, 0, .15);
+}
+
+.slider__slide {
+  height: 30rem;
+  aspect-ratio: 1 / 1;
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: .5rem;
+}
+
+.slider__dot {
+  background-color: rgba(255, 255, 255, .15);
+  width: 100%;
+  text-align: center;
+  border-radius: .5rem;
+  transition: all .15s;
+  box-shadow: 0 0 .25rem .05rem rgba(0, 0, 0, .15);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, .25);
+  }
+}
+
+.slider--allcash-slider {
+
+}
+
+.allcash-slider__track {
+
+}
+
+.allcash-slider__slide {
+  
 }
 
 footer {
