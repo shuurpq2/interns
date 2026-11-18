@@ -13,6 +13,7 @@
 
 html {
   scrollbar-gutter: stable;
+  scrollbar-color: var(--dark-text-color) rgba(255, 255, 255, .30);
   overflow-y: scroll;
   background-color: var(--dark-bg-color);
 }
